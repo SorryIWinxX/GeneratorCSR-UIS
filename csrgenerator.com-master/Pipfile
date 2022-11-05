@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+nose = "*"
+flake8 = "*"
+
+[packages]
+Flask = "*"
+pyOpenSSL = "*"
+gunicorn = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+test = "nosetests"
+check = "flake8 --max-line-length=120 *.py"
